@@ -1,10 +1,11 @@
+<% destinations = ["Mexico City", "Charleston", "Beijing", "Amsterdam"] %>
+
 <h1> Places I've Been! </h1>
 
 <ul>
-  <li> Mexico City </li>
-  <li> Charleston </li>
-  <li> Beijing </li>
-  <li> Amsterdam </li>
+  <% for destination in destinations %>
+    <li><%= destination %></li>
+  <% end %>
 </ul>
 
 <p> New Place </p>
